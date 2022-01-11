@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header class="title">
+                <h1>Front End Developer</h1>
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#html">HTML</a></li>
+                <li><a class="nav-link" href="#css">CSS</a></li>
+                <li><a class="nav-link" href="#javascript">JavaScript</a></li>
+                <li><a class="nav-link" href="#framework">FrameWork</a></li>
+                <li><a class="nav-link" href="#bootstrap">BootStrap</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section"  id="html">
+                <header>
+                    <h1 class="top-header">HTML</h1>
+                </header>
+                <div class="content">
+                    <p>HTML stands for <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</p>
+                    <p>HTML is the <strong>standard markup</strong> language for Web pages</p>
+                    <p>HTML <strong>elements</strong> are the building blocks of HTML pages</p>
+                    <p>HTML elements are represented by <strong><> tags</strong></p>
+                    <hr>
+                    <h2>HTML Elements</h2>
+                    <p>An HTML element is a <strong>start</strong> tag and an <strong>end</strong> tag with content in between:</p>
+                    <code>&lt;h1&gt;This is a Heading&lt;/h1&gt;</code>
+                    <p>
+                        <strong>Start tag</strong> => (&lt;h1&gt;) | <strong>Element content</strong> => This is a Heading | <strong>End tag</strong> => (&lt;/h1&gt;)
+                    </p>
+                    <hr>
+                    <h2>HTML Attributes</h2>
+                    <ul>
+                        <li>HTML elements can have <strong>attributes</strong></li>
+                        <li>Attributes provide <strong>additional information</strong> about the element</li>
+                        <li>Attributes come in name/value pairs like <strong>charset="utf-8"</strong></li>
+                    </ul>
+                    <hr>
+                    <h2>A Simple HTML Document</h2>
+<!-- Code -->
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p&gt;This is another paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+<!-- End Code -->   
+                    <hr>
+                    <h2>Example Explained</h2>
+                    <p>HTML elements are the building blocks of HTML pages.</p>
+                    <ul>
+                        <li>The &lt;!DOCTYPE html&gt; declaration defines this document to be HTML5</li>
+                        <li>The &lt;html lang="en"&gt; element is the root element of an HTML page</li>
+                        <li>The <strong>lang</strong> attribute  defines the language of the document</li>
+                        <li>The &lt;meta&gt; element contains meta information about the document</li>
+                        <li>The <strong>charset</strong> attribute defines the character set used in the document</li>
+                        <li>The &lt;title&gt; element specifies a title for the document</li>
+                        <li>The &lt;body&gt; element contains the visible page content</li>
+                        <li>The &lt;h1&gt; element defines a large heading</li>
+                        <li>The &lt;p&gt; element defines a paragraph</li>
+                    </ul>
+                    <hr>
+                    <h2>HTML Documents</h2>
+                    <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.</p>
+                    <p>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</p>
+                    <p>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+                    <hr>
+                    <h2>HTML Document Structure</h2>
+                    <p>Below is a visualization of an HTML document (an HTML Page):</p>
+                    <div class="img">
+                        <img src="img/html.PNG" alt="Html">
+                    </div>
+                    <p>
+                        <strong>Note:</strong> Only the content inside the &lt;body&gt; section (the white area above) is displayed in a browser.
+                    </p>
+                    <hr>
+                    <h2>HTML Headings</h2>
+                    <p>HTML headings are defined with &lt;h1&gt; to &lt;h6&gt; tags.</p>
+                    <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading:</p>
+                    <h3>Example</h3>
+<!-- Code -->
+<code>
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+</code>
+<!-- End Code -->
+                    <h3>Result</h3>
+                    <div class="result">
+                        <h1>This is heading 1</h1>
+                        <h2>This is heading 2</h2>
+                        <h3>This is heading 3</h3>
+                    </div>
+                    <hr>
+                    <h2>HTML Paragraphs</h2>
+                    <p>HTML paragraphs are defined with &lt;p&gt; tags:</p>
+                    <h3>Example</h3>
+<!-- Code -->
+<code>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</code>
+<!-- End Code -->
+                    <h3>Result</h3>
+                    <div class="result">
+                        <p>This is a paragraph.</p>
+                    </div>
+                    <hr>
+                    <h2>HTML Links</h2>
+                    <p>HTML links are defined with &lt;a&gt; tags:</p>
+                    <h3>Example</h3>
+                    <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
+                    <p>The link's destination is specified in the <strong>href</strong> attribute.</p>
+                    <h3>Result</h3>
+                    <div class="result">
+                        <a href="https://www.w3schools.com">This is a link</a>
+                    </div>
+                    <hr>
+                    <h2>HTML Images</h2>
+                    <p>HTML images are defined with &lt;img&gt; tags.</p>
+                    <p>
+                        The source file <strong>(src)</strong>, alternative text <strong>(alt)</strong>, width, and <strong>height</strong> are provided as attributes:
+                    </p>
+                    <h3>Example</h3>
+<!-- Code -->
+<code>
+&lt;img src="img_w3schools.jpg" alt="W3Schools" style="width:120px;height:150px"&gt;
+</code>
+<!-- Code -->
+                    <h3>Result</h3>
+                    <div class="result">
+                        <img src="img_w3schools.jpg" alt="W3Schools" style="width:120px;height:150px">
+                    </div>
+                    <hr>
+                    <h2>HTML Buttons</h2>
+                    <p>HTML buttons are defined with &lt;button&gt; tags:</p>
+                    <h3>Example</h3>
+<!-- Code -->
+<code>
+&lt;button&gt;Click me&lt;/button&gt;
+</code>
+<!-- End Code -->
+                    <h3>Result</h3>
+                    <div class="result">
+                        <button>Click me</button>
+                    </div>
+                    <hr>
+                    <h2>HTML Lists</h2>
+                    <p>
+                        HTML lists are defined with &lt;ul&gt; (unordered/bullet list) or &lt;ol&gt; (ordered/numbered list) tags, followed by &lt;li&gt; tags (list items):
+                    </p>
+                    <h3>Example</h3>
+<!-- Code -->
+<code>
+&lt;ul&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+<!-- Code -->   
+                    <h3>Result</h3>
+                    <div class="result">
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>
+                            For more information, visit the website <a href="https://www.w3schools.com/whatis/whatis_html.asp">w3schools</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="main-section" id="css">
+                <header>
+                    <h1 class="top-header">CSS</h1>
+                </header>
+                <div class="content">
+                    <p>CSS is the language we use to style an HTML document.</p>
+                    <h2>What is CSS?</h2>
+                    <ul>
+                        <li>CSS stands for Cascading Style Sheets</li>
+                        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                        <li>External stylesheets are stored in CSS files</li>
+                    </ul>
+                    <hr>
+                    <h2>Why Use CSS?</h2>
+                    <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+                    <h3>CSS Example</h3>
+<!-- Code -->
+<code>
+body {
+    background-color: lightblue;
+    }
+    
+    h1 {
+    color: white;
+    text-align: center;
+    }
+    
+    p {
+    font-family: verdana;
+    font-size: 20px;
+    }
+</code>
+<!-- End Code -->
+                    <hr>
+                    <h2>CSS Syntax</h2>
+                    <p>A CSS rule consists of a selector and a declaration block.</p>
+                    <div class="img">
+                        <img src="img/css.PNG" alt="">
+                    </div>
+                    <p>The selector points to the HTML element you want to style.</p>
+                    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                    <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                    <h3>Example</h3>
+                    <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+<!-- Code -->
+<code>
+p {
+    color: red;
+    text-align: center;
+    }
+</code>
+<!-- End Code -->
+                    <h3>Example Explained</h3>
+                    <ul>
+                        <li><strong>p</strong> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+                        <li><strong>color</strong> is a property, and <strong>red</strong> is the property value</li>
+                        <li><strong>text-align</strong> is a property, and <strong>center</strong> is the property value</li>
+                    </ul>
+                    <hr>
+                    <h2>CSS Selectors</h2>
+                    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+                    <p>We can divide CSS selectors into five categories:</p>
+                    <ul>
+                        <li>Simple selectors (select elements based on name, id, class)</li>
+                        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                    </ul>
+                    <p>This page will explain the most basic CSS selectors.</p>
+                    <hr>
+                    <h2>The CSS element Selector</h2>
+                    <p>The element selector selects HTML elements based on the element name.</p>
+                    <h3>Example</h3>
+                    <p>Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color:</p>
+<!-- Code -->
+<code>
+p {
+    text-align: center;
+    color: red;
+    }
+</code>
+<!-- End Code -->
+                    <hr>
+                    <h2>The CSS id Selector</h2>
+                    <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+                    <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+                    <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+                    <h3>Example</h3>
+                    <p>The CSS rule below will be applied to the HTML element with id="para1": </p>
+<!-- Code -->
+<code>
+#para1 {
+    text-align: center;
+    color: red;
+    }
+</code>
+<!-- End Code -->
+                <p>
+                    <strong>Note: </strong>An id name cannot start with a number!
+                </p>
+                <hr>
+                <h2>The CSS class Selector</h2>
+                <p>The class selector selects HTML elements with a specific class attribute.</p>
+                <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+                <h3>Example</h3>
+                <p>In this example all HTML elements with class="center" will be red and center-aligned: </p>
+<!-- Code -->
+<code>
+.center {
+    text-align: center;
+    color: red;
+    }
+</code>
+<!-- End Code -->
+                <p><strong>Note:</strong> A class name cannot start with a number!</p>
+                <hr>
+                <h2>The CSS Universal Selector</h2>
+                <p>The universal selector (*) selects all HTML elements on the page.</p>
+<!-- Code -->
+<code>
+* {
+    text-align: center;
+    color: blue;
+    }
+</code>
+<!-- End Code -->
+                <hr>
+                <h2>The CSS Grouping Selector</h2>
+                <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+                <p>Look at the following CSS code (the h1, h2, and p elements have the same style definitions):</p>
+<!-- Code -->
+<code>
+h1 {
+    text-align: center;
+    color: red;
+    }
+    
+    h2 {
+    text-align: center;
+    color: red;
+    }
+    
+    p {
+    text-align: center;
+    color: red;
+    }
+</code>
+<!-- End Code -->
+                <p>It will be better to group the selectors, to minimize the code.</p>
+                <p>To group selectors, separate each selector with a comma.</p>
+                <h3>Example</h3>
+                <p>In this example we have grouped the selectors from the code above: </p>
+<!-- Code -->
+<code>
+h1, h2, p {
+    text-align: center;
+    color: red;
+    }
+</code>
+<!-- End Code -->
+                <div class="img">
+                    <img src="img/css2.PNG" alt="">
+                </div>
+                </div>
+            </section>
+            <hr>
+            <section class="main-section" id="javascript">
+                <header>
+                    <h1 class="top-header">JavaScript</h1>
+                </header>
+                <article>
+                    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and
+                        lightweight language. Inside a host environment (for example, a web browser), JavaScript can be
+                        connected to the objects of its environment to provide programmatic control over them.</p>
+                        <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core
+                        set of language elements such as operators, control structures, and statements. Core JavaScript
+                        can be extended for a variety of purposes by supplementing it with additional objects; <strong>for example:</strong>
+                    </p>
+                    <ul>
+                        <li>Client-side JavaScript extends the core language by supplying objects to control a browser
+                        and its Document Object Model (DOM). For example, client-side extensions allow an application
+                        to place elements on an HTML form and respond to user events such as mouse clicks, form input,
+                        and page navigation.</li>
+                        <li>Server-side JavaScript extends the core language by supplying objects relevant to running
+                        JavaScript on a server. For example, server-side extensions allow an application to
+                        communicate with a database, provide continuity of information from one invocation to another
+                        of the application, or perform file manipulations on a server.</li>
+                    </ul>
+                </article>
+                <hr>
+                <h2>Hello World</h2>
+                <article>
+                    To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
+                    JavaScript code: <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code> Select the code in the pad and hit Ctrl+R to watch it unfold in your
+                    browser!
+                </article>
+                <hr>
+                <h2>Variables</h2>
+                <article>
+                    <p>You use variables as symbolic names for values in your application. The names of variables,
+                    called identifiers, conform to certain rules.</p>
+                    <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($);
+                    subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters
+                    include the characters "A" through "Z" (uppercase) and the characters "a" through "z"
+                    (lowercase).</p>
+                    <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use
+                    the Unicode escape sequences as characters in identifiers. Some examples of legal names are
+                    Number_hits, temp99, and _name.</p>
+                </article>
+                <hr>
+                <h2>Declaring Variables</h2>
+                <article>
+                    You can declare a variable in three ways:
+                    <p>With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to
+                    declare both local and global variables.</p>
+                    <p>By simply assigning it a value. For example, <code>x = 42.</code> This always declares a
+                    global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+                    <p>With the keyword let. For example, <code>let y = 13.</code> This syntax can be used to
+                    declare a block scope local variable. See Variable scope below.</p>
+                </article>
+                <hr>
+                <h2>Variable Scope</h2>
+                <article>
+                    <p>When you declare a variable outside of any function, it is called a global variable, because
+                    it is available to any other code in the current document. When you declare a variable within a
+                    function, it is called a local variable, because it is available only within that function.</p>
+                    <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable
+                    declared within a block is local to the function (or global scope) that the block resides
+                    within. For example the following code will log 5, because the scope of x is the function (or
+                    global context) within which x is declared, not the block, which in this case is an if
+                    statement.</p><code>if (true) { var x = 5; } console.log(x); // 5</code>
+                    <p>This behavior changes, when using the let declaration introduced in ECMAScript
+                    2015.</p><code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                    defined</code>
+                </article>
+                <hr>
+                <h2>Global Variables</h2>
+                <article>
+                    <p>Global variables are in fact properties of the global object. In web pages the global object
+                    is window, so you can set and access global variables using the window.variable syntax.</p>
+                    <p>Consequently, you can access global variables declared in one window or frame from another
+                    window or frame by specifying the window or frame name. For example, if a variable called
+                    phoneNumber is declared in a document, you can refer to this variable from an iframe as
+                    parent.phoneNumber.</p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section"  id="framework">
+                <header>
+                    <h1 class="top-header">FrameWork</h1>
+                </header>
+                <div class="content">
+                    <p>As a programmer, you don’t need to start from scratch when you have tools designed to help you with your projects. Frameworks are software that are developed and used by developers to build applications.</p>
+                    <hr>
+                    <h2>What is a Framework?</h2>
+                    <p>Since they are often built, tested, and optimized by several experienced software engineers and programmers, software frameworks are versatile, robust, and efficient.</p>
+                    <p>Using a software framework to develop applications lets you focus on the high-level functionality of the application. This is because any low-level functionality is taken care of by the framework itself.</p>
+                    <hr>
+                    <h2>Why do we use Frameworks?</h2>
+                    <p>Developing software is a complex process. It necessitates a plethora of tasks, including coding, designing, and testing. For only the coding part, programmers had to take care of the syntax, declarations, garbage collection, statements, exceptions, and more.</p>
+                    <p>Software frameworks make life easier for developers by allowing them to take control of the entire software development process, or most of it, from a single platform.</p>
+                    <p>Advantages of using a software framework:</p>
+                    <ul>
+                        <li>Assists in establishing better programming practices and fitting use of design patterns</li>
+                        <li>Code is more secure</li>
+                        <li>Duplicate and redundant code can be avoided</li>
+                        <li>Helps consistent developing code with fewer bugs</li>
+                        <li>Makes it easier to work on sophisticated technologies</li>
+                        <li>One could create their software framework or contribute to open-source frameworks. Hence, there is a continuous improvement in the functionality</li>
+                        <li>Several code segments and functionalities are pre-built and pre-tested. This makes applications more reliable</li>
+                        <li>Testing and debugging the code is a lot easier and can be done even by developers who do not own the code</li>
+                        <li>The time required to develop an application is reduced significantly</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section class="main-section"  id="bootstrap">
+                <header>
+                    <h1 class="top-header">BootStrap</h1>
+                </header>
+                <div class="content">
+                    <p>The world’s most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.</p>
+                    <div class="info">
+                        <p>
+                            For more information, visit the website <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">BootStrap</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
